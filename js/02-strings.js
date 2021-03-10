@@ -64,5 +64,7 @@ const navHTML2 =`<nav>
                 <a href="#">Link</a>
                 <a href="#">Link</a>
                 <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
                 </nav>`;
 console.log(navHTML2);
