@@ -81,7 +81,7 @@ console.log(pomidoroIlgis);
 
 console.log('----------------');
 
-const akys = 'Melynos';
+const akys = 'Geltonos';
 
 if (akys === 'Melynos') {
     console.log(`oj kokie fainulkos!!!`);
