@@ -4,16 +4,13 @@ pvz.: “abcdef” -> “fedcba”
 
 */
 
-
-const text = 'abcdef';
-let reverse = '';
-
-
 /* for (let i = 0; i < text.length; i++) {
     reverse += text[text.length - 1 - i];
 }
 */
 
+const text = 'abcdef';
+let reverse = '';
 
 for (let i = 0; i < text.length; i++) {
     reverse = text[i] + reverse;
@@ -41,3 +38,17 @@ for (let i = text.length ; i > 0; i--) {
 console.log(text, '->', reverse);
 
 */
+
+
+const pirmasZodis = 'abcdef';
+function reverseString(text) {
+    let reverse = '';
+
+    for (let i = 0; i < text.length; i++) {
+      reverse = text[i] + reverse;
+    }
+
+    console.log(text, '->', reverse); 
+}
+reverseString(pirmasZodis);
+reverseString('Lietuva');
