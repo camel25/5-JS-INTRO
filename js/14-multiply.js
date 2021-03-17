@@ -21,9 +21,13 @@ function daugyba(a, b) {
     if(typeof b !== 'number'){
         return 'Antrasis parametras turi buti skaiciaus tipo';
     }
-    if (isNaN(b) || b === Infinity || b === -Infinity) {
+    if (!sFinite(b)) {
         return `Antrasis parametras turi buti normalus skaicius ir negali buti ${b}`;
-    }
+
+
+//    if (isNaN(b) || b === Infinity || b === -Infinity) {
+//        return `Antrasis parametras turi buti normalus skaicius ir negali buti ${b}`;
+//    }
 
     // logika
     const rez = a * b;
