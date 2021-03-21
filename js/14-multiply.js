@@ -23,7 +23,7 @@ function daugyba(a, b) {
     }
     if (!sFinite(b)) {
         return `Antrasis parametras turi buti normalus skaicius ir negali buti ${b}`;
-
+    }
 
 //    if (isNaN(b) || b === Infinity || b === -Infinity) {
 //        return `Antrasis parametras turi buti normalus skaicius ir negali buti ${b}`;
