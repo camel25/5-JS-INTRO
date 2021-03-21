@@ -2,7 +2,7 @@ function gooseFilter (birds) {
     var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
     
     // sarasas kuriame kaupsime visas leistinas reiksmes
-    const rez = []
+    const rez = [];
 
     // return an array containing all of the strings in the input array except those that match strings in geese
 
@@ -15,22 +15,32 @@ function gooseFilter (birds) {
             jeigu, geese narys sutampa su bird reiksme, tai ji yra neleistina/ neitraukiama i rez sarasa
             priesingu atveju - bird itraukiame i rez sarasa
     */
+   for (let b = 0 ; b < birds.length; b++) {
+        const bird = birds[b];
 
+        let yraSarase = false; 
+        for (let g = 0; g < geese.length; g++) {
+             const goose = geese[g]; 
+             if (goose === bird) {
+                yraSarase = true;
+                break;
+            }
+        }
+        if (!yraSarase) {
+            rez.push(bird);
+        }
+    }  
     return rez; 
-};
-
-
+}
 
 
 
 console.log(gooseFilter(
     ["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]),
     ["Mallard", "Hook Bill", "Crested", "Blue Swedish"]);
-    });
     console.log(gooseFilter(
         ["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]),
         ["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]);
-    });
     console.log(gooseFilter(
         ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]),
-         []);
+        []);
