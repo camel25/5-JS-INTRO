@@ -212,3 +212,5 @@ const short = dictionary2.reduce((total, word) => total + word[0], '');
 
 console.log(short);
 /*********************************** */
+
+
