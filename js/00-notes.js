@@ -4,3 +4,7 @@
 // funkcijos - aprasome logika, kuria norime perpanaudoti N kartu, tik su galimai skirtingais parametrais 
 
 // event'ai (event listeners) - skirta stebeti ivykius ( click, scroll, keypress ir pns) i kuriuos reikia sureaguoti iskvieciant norima funkcija 
+
+
+
+// maziausio sveiko skaiciaus apskaiciavimui return Math.min.apply( Math, args); 

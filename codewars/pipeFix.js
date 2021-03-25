@@ -1,12 +1,15 @@
 function pipeFix(numbers) {
     //input validation
-
-
-
+        let max = numbers[numbers.length -1];
+        let min = numbers[0];
+        let newArr = [];
+      
    //logic
-
+   for (let i = min; i <= max; i++) {
+    newArr.push(i);
+  }
    //result
-   return 
+   return newArr;
 }
 
 
